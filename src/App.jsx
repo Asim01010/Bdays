@@ -6,6 +6,8 @@ import Object from "./objectState/Object.jsx";
 import MultiInputs from "./objectState/MultiInputs.jsx";
 import UseReduse from "./UseReduce/UseReduse.jsx";
 import Useref from "./UseReduce/UseRef/Useref.jsx";
+import Test from "./UseReduce/UseRef/Test.jsx";
+import Test2 from "./UseReduce/UseRef/Test2.jsx";
 
 // import UseStateBasics from "./UseStateBasics/UseStateBasics";
 // import Counter from "./Counter/Counter";
@@ -21,7 +23,9 @@ const App = () => {
       {/* <Object /> */}
       {/* <MultiInputs /> */}
       {/* <UseReduse /> */}
-      <Useref />
+      {/* <Useref /> */}
+      {/* <Test /> */}
+      <Test2 />
     </>
   );
 };
