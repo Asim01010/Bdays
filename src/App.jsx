@@ -10,6 +10,7 @@ import Test from "./UseReduce/UseRef/Test.jsx";
 import Test2 from "./UseReduce/UseRef/Test2.jsx";
 import Test3 from "./UseReduce/UseRef/Test3.jsx";
 import Singlebd from "./UseReduce/UseRef/Singlebd.jsx";
+import Fetch from "./UseReduce/UseRef/Fetch.jsx";
 
 // import UseStateBasics from "./UseStateBasics/UseStateBasics";
 // import Counter from "./Counter/Counter";
@@ -28,7 +29,8 @@ const App = () => {
       {/* <Useref /> */}
       {/* <Test /> */}
       {/* <Test2 /> */}
-      <Test3 />
+      {/* <Test3 /> */}
+      <Fetch />
     </>
   );
 };
