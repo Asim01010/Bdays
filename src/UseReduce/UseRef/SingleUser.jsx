@@ -1,9 +1,11 @@
 import React from "react";
 
-const SingleUser = () => {
+const SingleUser = ({ brand }) => {
   return (
     <>
-      <div className="shaodw-xl p-5 rounded-md">aasds</div>
+      <div className="shaodw-xl p-5 rounded-md">
+        <div className="text-4xl">{brand}</div>
+      </div>
     </>
   );
 };

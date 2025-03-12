@@ -1,28 +1,26 @@
 import React, { useEffect, useState } from "react";
-import { data } from "./data";
 import SingleUser from "./SingleUser";
+import { data } from "./data";
 
 const Fetch = () => {
-  const [users, setUser] = useState([]);
-
+  const [user, setUser] = useState([]);
   const api = "https://dummyjson.com/products";
 
-  const setData = async () => {
+  const getData = async () => {
     const response = await fetch(api);
     const data = await response.json();
     setUser(data);
-    console.log(data);
+    console.log(setUser);
   };
-  useEffect(() => {
-    setData();
-  }, []);
 
-  console.log(users);
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <>
-      <div className="container mx-auto grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-4 shadow-xl">
-        {users.map((item, index) => {
-          return <SingleUser key={index} />;
+      <div className="container mx-auto p-5 shadow-xl">
+        {data?.map((item, index) => {
+          return <SingleUser key={index} {...item} />;
         })}
       </div>
     </>
