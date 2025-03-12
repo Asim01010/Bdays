@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import SingleUser from "./SingleUser";
-import { data } from "./data";
 
 const Fetch = () => {
   const [user, setUser] = useState([]);
@@ -9,19 +8,19 @@ const Fetch = () => {
   const getData = async () => {
     const response = await fetch(api);
     const data = await response.json();
-    setUser(data);
-    console.log(setUser);
+    setUser(data.products);
   };
 
   useEffect(() => {
     getData();
   }, []);
+
   return (
     <>
       <div className="container mx-auto p-5 shadow-xl">
-        {data?.map((item, index) => {
-          return <SingleUser key={index} {...item} />;
-        })}
+        {user.map((item, index) => (
+          <SingleUser key={index} {...item} />
+        ))}
       </div>
     </>
   );

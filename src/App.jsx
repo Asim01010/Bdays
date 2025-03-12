@@ -31,8 +31,8 @@ const App = () => {
       {/* <Test /> */}
       {/* <Test2 /> */}
       {/* <Test3 /> */}
-      {/* <Fetch /> */}
-      <Test4 />
+      <Fetch />
+      {/* <Test4 /> */}
     </>
   );
 };
