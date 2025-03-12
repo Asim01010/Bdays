@@ -8,6 +8,8 @@ import UseReduse from "./UseReduce/UseReduse.jsx";
 import Useref from "./UseReduce/UseRef/Useref.jsx";
 import Test from "./UseReduce/UseRef/Test.jsx";
 import Test2 from "./UseReduce/UseRef/Test2.jsx";
+import Test3 from "./UseReduce/UseRef/Test3.jsx";
+import Singlebd from "./UseReduce/UseRef/Singlebd.jsx";
 
 // import UseStateBasics from "./UseStateBasics/UseStateBasics";
 // import Counter from "./Counter/Counter";
@@ -25,7 +27,8 @@ const App = () => {
       {/* <UseReduse /> */}
       {/* <Useref /> */}
       {/* <Test /> */}
-      <Test2 />
+      {/* <Test2 /> */}
+      <Test3 />
     </>
   );
 };
