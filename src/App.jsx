@@ -12,6 +12,7 @@ import Test3 from "./UseReduce/UseRef/Test3.jsx";
 import Singlebd from "./UseReduce/UseRef/Singlebd.jsx";
 import Fetch from "./UseReduce/UseRef/Fetch.jsx";
 import Test4 from "./UseReduce/UseRef/Test4.jsx";
+import { Toaster } from "react-hot-toast";
 
 // import UseStateBasics from "./UseStateBasics/UseStateBasics";
 // import Counter from "./Counter/Counter";
@@ -31,8 +32,9 @@ const App = () => {
       {/* <Test /> */}
       {/* <Test2 /> */}
       {/* <Test3 /> */}
-      <Fetch />
-      {/* <Test4 /> */}
+      {/* <Fetch /> */}
+      <Test4 />
+      <Toaster />
     </>
   );
 };
